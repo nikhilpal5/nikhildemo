@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Nikhil Pal</title>
+  <link rel="icon" href="images/portfolio.png"/>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (One time only) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Floating Bubbles Globally -->
+  <div class="floating-bubbles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/nikhil.jpg" class="avatar-img me-2" alt="Avatar of Nikhil Pal" />
+        <span id="logo-text">Nikhil <strong>Pal</strong></span>
+
+      </a>
+
+      <!-- Hamburger Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <!-- Dark Mode Toggle -->
+          <li class="nav-item">
+            <label class="toggle-switch" for="themeToggle" title="Toggle Dark Mode">
+              <input type="checkbox" id="themeToggle" title="Toggle dark mode" />
+              <span class="slider">
+                <i class="fas fa-moon" id="toggleIcon"></i>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <!-- ===== Hero Section ===== -->
+  <section id="home" class="hero-section position-relative overflow-hidden">
+    <!-- Animated Bubbles -->
+    <div class="bubble-bg">
+      <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+        <defs>
+          <radialGradient id="grad1" cx="50%" cy="50%" r="80%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.6" />
+            <stop offset="100%" stop-color="#00d4ff" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+
+        <!-- Floating bubbles -->
+        <circle cx="150" cy="600" r="20" fill="url(#grad1)">
+          <animate attributeName="cy" values="600;100;600" dur="14s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="300" cy="700" r="25" fill="url(#grad1)">
+          <animate attributeName="cy" values="700;150;700" dur="18s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="500" cy="650" r="15" fill="url(#grad1)">
+          <animate attributeName="cy" values="650;200;650" dur="12s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="700" cy="750" r="18" fill="url(#grad1)">
+          <animate attributeName="cy" values="750;100;750" dur="16s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="900" cy="620" r="22" fill="url(#grad1)">
+          <animate attributeName="cy" values="620;180;620" dur="13s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1100" cy="710" r="20" fill="url(#grad1)">
+          <animate attributeName="cy" values="710;160;710" dur="17s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1250" cy="670" r="24" fill="url(#grad1)">
+          <animate attributeName="cy" values="670;190;670" dur="15s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1350" cy="690" r="16" fill="url(#grad1)">
+          <animate attributeName="cy" values="690;140;690" dur="11s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="400" cy="600" r="18" fill="url(#grad1)">
+          <animate attributeName="cy" values="600;170;600" dur="12s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="800" cy="680" r="20" fill="url(#grad1)">
+          <animate attributeName="cy" values="680;130;680" dur="14s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+    </div>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Left Column (Image) -->
+        <div class="col-md-5 text-center">
+  <img src="images/nikhil.jpg" alt="Nikhil Pal" class="img-fluid rounded-circle shadow-lg about-img">
+</div>
+
+
+        <!-- Right Column (Text Content) -->
+        <div class="col-md-7">
+          <h2 class="mb-4">About Me</h2>
+          <p class="lead">I’m <strong>Nikhil Pal</strong>, a passionate <strong>Frontend Web Developer</strong> and
+            <strong>UI/UX Designer</strong> based in India. I love creating clean, responsive, and modern websites with
+            a focus on performance and user experience.</p>
+          <p>With a strong grip on <strong>HTML, CSS, JavaScript, Bootstrap, React.js</strong> and <strong>WordPress,
+              Shopify</strong>, I build scalable web interfaces and applications. I also enjoy designing in Figma and
+            turning those designs into pixel-perfect websites.</p>
+          <p>I believe in continuous learning and love working on challenging projects that push my limits and allow me
+            to grow.</p>
+
+          <ul class="list-unstyled mt-4">
+            <li><i class="fas fa-check-circle me-2 text-success"></i> Pixel-perfect Responsive Design</li>
+            <li><i class="fas fa-check-circle me-2 text-success"></i> Clean Code with Focus on Performance</li>
+            <li><i class="fas fa-check-circle me-2 text-success"></i> UI/UX Design Skills with Developer Mindset</li>
+          </ul>
+      
+
+        <h3 class="mt-5 mb-4">My Skills</h3>
+
+<!-- Skill: HTML & CSS -->
+<div class="mb-3">
+  <label class="form-label">HTML & CSS</label>
+  <div class="progress">
+    <div class="progress-bar bg-success" role="progressbar" aria-label="HTML & CSS proficiency" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+      95%
+    </div>
+  </div>
+</div>
+
+<!-- Skill: JavaScript / React.js -->
+<div class="mb-3">
+  <label class="form-label">JavaScript / React.js</label>
+  <div class="progress">
+    <div class="progress-bar bg-info" role="progressbar" aria-label="JavaScript and React.js proficiency" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+      90%
+    </div>
+  </div>
+</div>
+
+<!-- Skill: Node.js / Backend -->
+<div class="mb-3">
+  <label class="form-label">Node.js / Backend</label>
+  <div class="progress">
+    <div class="progress-bar bg-warning" role="progressbar" aria-label="Node.js and Backend proficiency" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      75%
+    </div>
+  </div>
+</div>
+
+<!-- Skill: UI/UX Design (Figma) -->
+<div class="mb-3">
+  <label class="form-label">UI/UX Design (Figma)</label>
+  <div class="progress">
+    <div class="progress-bar bg-danger" role="progressbar" aria-label="UI/UX Design (Figma) proficiency" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+      85%
+    </div>
+  </div>
+</div>
+
+<!-- Skill: WordPress -->
+<div class="mb-3">
+  <label class="form-label">WordPress</label>
+  <div class="progress">
+    <div class="progress-bar bg-primary" role="progressbar" aria-label="WordPress proficiency" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+      88%
+    </div>
+  </div>
+</div>
+
+<!-- Skill: Shopify -->
+<div class="mb-3">
+  <label class="form-label">Shopify</label>
+  <div class="progress">
+    <div class="progress-bar bg-secondary" role="progressbar" aria-label="Shopify proficiency" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+      80%
+    </div>
+  </div>
+</div>
+
+
+ <!-- Animated Bubbles -->
+    <div class="bubble-bg">
+      <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+        <defs>
+          <radialGradient id="grad1" cx="50%" cy="50%" r="80%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.6" />
+            <stop offset="100%" stop-color="#00d4ff" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+
+        <!-- Floating bubbles -->
+        <circle cx="150" cy="600" r="20" fill="url(#grad1)">
+          <animate attributeName="cy" values="600;100;600" dur="14s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="300" cy="700" r="25" fill="url(#grad1)">
+          <animate attributeName="cy" values="700;150;700" dur="18s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="500" cy="650" r="15" fill="url(#grad1)">
+          <animate attributeName="cy" values="650;200;650" dur="12s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="700" cy="750" r="18" fill="url(#grad1)">
+          <animate attributeName="cy" values="750;100;750" dur="16s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="900" cy="620" r="22" fill="url(#grad1)">
+          <animate attributeName="cy" values="620;180;620" dur="13s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1100" cy="710" r="20" fill="url(#grad1)">
+          <animate attributeName="cy" values="710;160;710" dur="17s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1250" cy="670" r="24" fill="url(#grad1)">
+          <animate attributeName="cy" values="670;190;670" dur="15s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1350" cy="690" r="16" fill="url(#grad1)">
+          <animate attributeName="cy" values="690;140;690" dur="11s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="400" cy="600" r="18" fill="url(#grad1)">
+          <animate attributeName="cy" values="600;170;600" dur="12s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="800" cy="680" r="20" fill="url(#grad1)">
+          <animate attributeName="cy" values="680;130;680" dur="14s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+    </div>
+          <p class="mt-4">Feel free to connect with me on social media or drop me an email. I’m always open to
+            discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          <a href="#contact" class="btn btn-primary mt-1 glowing-btn fw-bold">Contact Me</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+   
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+   <!-- Dark Mode Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("themeToggle");
+      const icon = document.getElementById("toggleIcon");
+      const body = document.body;
+
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        toggle.checked = true;
+        icon.classList.replace("fa-moon", "fa-sun");
+      }
+
+      toggle.addEventListener("change", () => {
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+          icon.classList.replace("fa-moon", "fa-sun");
+          localStorage.setItem("theme", "dark");
+        } else {
+          icon.classList.replace("fa-sun", "fa-moon");
+          localStorage.setItem("theme", "light");
+        }
+      });
+    });
+  </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll(".progress-bar");
+    bars.forEach((bar, index) => {
+      const value = bar.innerText.trim();
+      bar.style.setProperty('--target-width', value);
+
+      // Add staggered animation delay (0.5s, 1s, 1.5s, etc.)
+      bar.style.animationDelay = `${index * 0.5}s`;
+    });
+  });
+
+  toggle.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+  document.querySelector('.navbar').classList.toggle('dark');
+  document.querySelector('.site-footer').classList.toggle('dark');
+});
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("themeToggle");
+      const icon = document.getElementById("toggleIcon");
+      const body = document.body;
+
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark");
+        toggle.checked = true;
+        icon.classList.replace("fa-moon", "fa-sun");
+      }
+
+      if (toggle) {
+        toggle.addEventListener("change", () => {
+          body.classList.toggle("dark");
+          document.querySelector(".navbar").classList.toggle("dark");
+          document.querySelector(".site-footer").classList.toggle("dark");
+
+          if (body.classList.contains("dark")) {
+            icon.classList.replace("fa-moon", "fa-sun");
+            localStorage.setItem("theme", "dark");
+          } else {
+            icon.classList.replace("fa-sun", "fa-moon");
+            localStorage.setItem("theme", "light");
+          }
+        });
+      }
+
+      document.querySelectorAll(".progress-bar").forEach((bar, index) => {
+        const value = bar.innerText.trim();
+        bar.style.setProperty('--target-width', value);
+        bar.style.animationDelay = `${index * 0.4}s`;
+      });
+    });
+  </script>
+</body>
+</html>

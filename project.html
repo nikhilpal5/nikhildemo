@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Nikhil Pal</title>
+  <link rel="icon" href="images/portfolio.png"/>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome (One time only) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Floating Bubbles Globally -->
+  <div class="floating-bubbles">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="images/nikhil.jpg" class="avatar-img me-2" alt="Avatar of Nikhil Pal" />
+        <span id="logo-text">Nikhil <strong>Pal</strong></span>
+
+      </a>
+
+      <!-- Hamburger Toggle -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="project.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <!-- Dark Mode Toggle -->
+          <li class="nav-item">
+            <label class="toggle-switch" for="themeToggle" title="Toggle Dark Mode">
+              <input type="checkbox" id="themeToggle" title="Toggle dark mode" />
+              <span class="slider">
+                <i class="fas fa-moon" id="toggleIcon"></i>
+              </span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ===== Hero Section ===== -->
+  <section id="home" class="hero-section position-relative overflow-hidden">
+    <!-- Animated Bubbles -->
+    <div class="bubble-bg">
+      <svg viewBox="0 0 1440 800" preserveAspectRatio="none">
+        <defs>
+          <radialGradient id="grad1" cx="50%" cy="50%" r="80%" fx="50%" fy="50%">
+            <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.6" />
+            <stop offset="100%" stop-color="#00d4ff" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+
+        <!-- Floating bubbles -->
+        <circle cx="150" cy="600" r="20" fill="url(#grad1)">
+          <animate attributeName="cy" values="600;100;600" dur="14s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="300" cy="700" r="25" fill="url(#grad1)">
+          <animate attributeName="cy" values="700;150;700" dur="18s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="500" cy="650" r="15" fill="url(#grad1)">
+          <animate attributeName="cy" values="650;200;650" dur="12s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="700" cy="750" r="18" fill="url(#grad1)">
+          <animate attributeName="cy" values="750;100;750" dur="16s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="900" cy="620" r="22" fill="url(#grad1)">
+          <animate attributeName="cy" values="620;180;620" dur="13s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1100" cy="710" r="20" fill="url(#grad1)">
+          <animate attributeName="cy" values="710;160;710" dur="17s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1250" cy="670" r="24" fill="url(#grad1)">
+          <animate attributeName="cy" values="670;190;670" dur="15s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="1350" cy="690" r="16" fill="url(#grad1)">
+          <animate attributeName="cy" values="690;140;690" dur="11s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="400" cy="600" r="18" fill="url(#grad1)">
+          <animate attributeName="cy" values="600;170;600" dur="12s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="800" cy="680" r="20" fill="url(#grad1)">
+          <animate attributeName="cy" values="680;130;680" dur="14s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+    </div>
+
+    <!-- ===== Projects Section ===== -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="slide-heading">My Projects</h2>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Project Card 1 -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="project-card service-card card-hover w-100">
+              <i class="fab fa-html5 fa-2x mb-2 text-primary"></i>
+              <h5><a href="https://yourportfolio.com" target="_blank" rel="noopener" class="project-link">Personal
+                  Portfolio Website</a></h5>
+              <p>Designed and developed using HTML, CSS, JS & Bootstrap with a modern animated UI theme that supports
+                dark mode and mobile-first responsiveness.</p>
+            </div>
+          </div>
+          <!-- Project Card 2 -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="project-card service-card card-hover w-100">
+              <i class="fab fa-figma fa-2x mb-2 text-primary"></i>
+              <h5><a
+                  href="https://www.figma.com/design/7ZE472JP4oUSUfUhZ3kFR8/InsightFul-App?node-id=0-1&t=FyeCPHdCZNkoit5N-1"
+                  target="_blank" rel="noopener" class="project-link">InsightFul Store – UI/UX CRM Design</a></h5>
+              <p>Custom CRM Dashboard design crafted in Figma. It includes modern UI screens like analytics charts, task
+                panels, and team management for SaaS-based tools.</p>
+            </div>
+          </div>
+
+          <!-- Project Card 3 -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="project-card service-card card-hover w-100">
+              <i class="fas fa-drafting-compass fa-2x mb-2 text-primary"></i>
+              <h5><a href="https://achalakart.in/" target="_blank" rel="noopener" class="project-link">DevMandir –
+                  Spiritual Booking Platform UI</a></h5>
+              <p>I designed and developed the Pooja and Chadhava pages for a spiritual platform called DevMandir. The
+                pages were built using HTML, CSS, JavaScript, and Bootstrap, ensuring a clean, responsive, and
+                user-friendly interface.</p>
+            </div>
+          </div>
+
+          <!-- Project Card 4 -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="project-card service-card card-hover w-100">
+              <i class="fas fa-cloud-sun fa-2x mb-2 text-primary"></i>
+              <h5><a href="#" target="_blank" rel="noopener" class="project-link">React Weather App</a></h5>
+              <p>Uses React.js and OpenWeather API to fetch real-time data, display city-wise forecast, and includes
+                responsive UI with live loading animation.</p>
+            </div>
+          </div>
+          <!-- Project Card 4 -->
+          <!-- <div class="col-md-6 col-lg-4 d-flex">
+        <div class="project-card service-card card-hover w-100">
+          <i class="fab fa-wordpress fa-2x mb-2 text-primary"></i>
+          <h5><a href="https://raktakart.in" target="_blank" rel="noopener" class="project-link">Raktakart – WooCommerce Store</a></h5>
+          <p>A custom WordPress + WooCommerce eCommerce website for Fashion and grocery products, fully responsive and optimized for local business growth.</p>
+        </div>
+      </div> -->
+
+          <!-- Project Card 5 -->
+
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="project-card service-card card-hover w-100">
+              <i class="fas fa-rocket fa-2x mb-2 text-primary"></i>
+              <h5><a href="#" target="_blank" rel="noopener" class="project-link">Launch Landing Page</a></h5>
+              <p>CTA-focused launch page with scroll reveal animations, optimized for product showcases, and includes
+                pricing table and testimonial section.</p>
+            </div>
+          </div>
+          <!-- Project Card 6 -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="project-card service-card card-hover w-100">
+              <i class="fab fa-shopify fa-2x mb-2 text-primary"></i>
+              <h5><a href="https://lolliandomi.com" target="_blank" rel="noopener" class="project-link">Lollian Domi –
+                  Shopify Store</a></h5>
+              <p>It’s a Shopify-based store offering wallpapers, blinds, and glass films, with features like product
+                filtering, collections, bulk ordering, and an optimized checkout and installation journey</p>
+            </div>
+          </div>
+          <!-- Project Card 7 -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="project-card service-card card-hover w-100">
+              <i class="fab fa-wordpress fa-2x mb-2 text-primary"></i>
+              <h5><a href="https://achalakart.in/" target="_blank" rel="noopener" class="project-link">Achalakart –
+                  E-commerce Website</a></h5>
+              <p>WordPress-based online store for daily essentials, featuring product filtering, cart, and secure
+                payment integration using WooCommerce.</p>
+            </div>
+          </div>
+          <!-- Project Card 8 -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="project-card service-card card-hover w-100">
+              <i class="fab fa-wordpress fa-2x mb-2 text-primary"></i>
+              <h5><a href="https://avpmsnxtlevel.in" target="_blank" rel="noopener" class="project-link">AVPMS NXT Level
+                  – WooCommerce Store</a></h5>
+              <p>A custom WordPress + WooCommerce eCommerce website for Fashion and grocery products, fully responsive
+                and optimized for local business growth.</p>
+            </div>
+          </div>
+
+
+
+          <!-- Project Card 9 -->
+          <div class="col-md-6 col-lg-4 d-flex">
+            <div class="project-card service-card card-hover w-100">
+              <i class="fab fa-wordpress fa-2x mb-2 text-primary"></i>
+              <h5><a href="#" target="_blank" rel="noopener" class="project-link">SEO Blog with WordPress</a></h5>
+              <p>Built for content creators focusing on SEO, readability, and fast loading. Custom post layout and
+                category-based blog structure included.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    <!-- Dark Mode Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("themeToggle");
+        const icon = document.getElementById("toggleIcon");
+        const body = document.body;
+
+        if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+          toggle.checked = true;
+          icon.classList.replace("fa-moon", "fa-sun");
+        }
+
+        toggle.addEventListener("change", () => {
+          body.classList.toggle("dark-mode");
+
+          if (body.classList.contains("dark-mode")) {
+            icon.classList.replace("fa-moon", "fa-sun");
+            localStorage.setItem("theme", "dark");
+          } else {
+            icon.classList.replace("fa-sun", "fa-moon");
+            localStorage.setItem("theme", "light");
+          }
+        });
+      });
+    </script>
+</body>
+
+</html>
